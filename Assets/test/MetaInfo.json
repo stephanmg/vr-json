@@ -1,0 +1,24 @@
+{
+"geom1d": [
+{
+"name" : "first" ,
+"refinement" : "0"
+},
+
+{
+"name" : "second"  ,
+"refinement" : "1"
+}
+], 
+"geom2d": [
+{
+"name" : "first" ,
+"inflation" : "1.0"
+},
+
+{
+"name" : "second" ,
+"inflation" : "2.5"
+}
+]
+}
