@@ -43,7 +43,7 @@ namespace C2M2.NeuronalDynamics.Visualization {
                 public Geom2d[] geom2d;
             }
 
-            private string fileName;
+            private readonly string fileName;
             private Geometry geometry;
             private Boolean loaded = false;
 
