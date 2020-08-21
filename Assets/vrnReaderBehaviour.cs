@@ -151,12 +151,12 @@ namespace C2M2.NeuronalDynamics.Visualization {
                     /// Instantiate the VRN reader with the desired file name
                     vrnReader reader = new vrnReader (Application.dataPath + Path.DirectorySeparatorChar + fileName);
                     /// Get 1d mesh (0-th refinement aka coarse grid)
-                    UnityEngine.Debug.Log (reader.retrieve_1d_mesh (0));
+                    UnityEngine.Debug.Log (reader.retrieve_1d_mesh ());
                     /// Get inflated 2d mesh by a factor of 2.5
                     UnityEngine.Debug.Log (reader.retrieve_2d_mesh (2.5));
 
                     /// load mesh
-                    string meshName = reader.retrieve_1d_mesh (0);
+                    string meshName = reader.retrieve_1d_mesh ();
                     reader.read_ugx (meshName);
                 } catch (Exception ex) when (ex is System.IO.FileNotFoundException || ex is System.ArgumentNullException) {
                     UnityEngine.Debug.LogError ($"Archive or mesh file not found. Archive: {fileName}.");
