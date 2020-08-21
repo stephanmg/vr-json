@@ -114,7 +114,7 @@ namespace C2M2.NeuronalDynamics.Visualization {
             /// On start a test file (test.vrn) is read from the assets folder
             /// The coarse 1d mesh is retrieved as well as the by a factor of 
             /// 2.5 inflated 2d mesh is retrieved from the archive test.vrn
-            class Example {
+            static class Example {
                 static void Main (string[] args) {
                     string fileName = "test.vrn";
                     try {
