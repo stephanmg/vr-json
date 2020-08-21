@@ -56,7 +56,7 @@ namespace C2M2.NeuronalDynamics.Visualization {
                     var file = archive.GetEntry ("MetaInfo.json");
                     _ = file ??
                         throw new ArgumentNullException (nameof (file));
-                    geometry = JsonUtility.FromJson<Geometry> (new StreamReader (file.Open ()).ReadToEnd ().ToString ());
+                    geometry = JsonUtility.FromJson<Geometry> (new StreamReader (file.Open ()).ReadToEnd ());
                     loaded = true;
                 }
             }
